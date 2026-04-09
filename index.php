@@ -12,10 +12,13 @@
 
 // API klíč – nastav jako env proměnnou GOOGLE_AI_API_KEY,
 // nebo vlož přímo sem (méně bezpečné)
-$apiKey = getenv('GOOGLE_AI_API_KEY') ?: 'AIzaSyDkAUMqJCGYX6203UqJOx0vovcPSKd53f4';
+$apiKey = getenv('GOOGLE_AI_API_KEY') ?: '';
 
-// Soubor s historií
+// Soubor s historií – zkusí lokální cestu, pokud není zapisovatelná, použije /tmp
 $chatFile = __DIR__ . '/chat.json';
+if (!is_writable($chatFile) && !is_writable(__DIR__)) {
+    $chatFile = '/tmp/chat.json';
+}
 
 // Dostupné modely (label => model ID)
 $models = [
@@ -107,6 +110,9 @@ function callGoogleAI(string $apiKey, string $model, array $messages): string
 // ============================================================
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Potlačit PHP chyby v HTML – nesmí rozbít JSON odpověď
+    ini_set('display_errors', '0');
+    error_reporting(0);
     header('Content-Type: application/json; charset=utf-8');
 
     $input = json_decode(file_get_contents('php://input'), true);
