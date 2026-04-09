@@ -12,7 +12,7 @@
 
 // API klíč – nastav jako env proměnnou GOOGLE_AI_API_KEY,
 // nebo vlož přímo sem (méně bezpečné)
-$apiKey = getenv('GOOGLE_AI_API_KEY') ?: 'AIzaSyDkAUMqJCGYX6203UqJOx0vovcPSKd53f4';
+$apiKey = getenv('GOOGLE_AI_API_KEY');
 
 // Soubor s historií
 $chatFile = __DIR__ . '/chat.json';
