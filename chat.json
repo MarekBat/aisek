@@ -150,5 +150,11 @@
         "content": "Chyba API: Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
         "time": "2026-04-09T12:36:27+00:00",
         "session": "84a42cb6711a6a48"
+    },
+    {
+        "role": "assistant",
+        "content": "Ahoj! 👋 Jsem Batelkův AI asistent. Můžeš se mě zeptat na cokoliv – rád pomůžu. Co pro tebe můžu udělat?",
+        "time": "2026-04-09T12:44:08+00:00",
+        "session": "ed18e947b72c0396"
     }
 ]

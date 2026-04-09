@@ -128,11 +128,24 @@ function callGoogleAI(string $apiKey, string $model, array $messages): string
 // ÚVODNÍ ZPRÁVA PRO NOVOU RELACI
 // ============================================================
 
+$greetings = [
+    'Ahoj! 👋 Jsem Batelkův AI asistent. Můžeš se mě zeptat na cokoliv – rád pomůžu. Co pro tebe můžu udělat?',
+    'Zdravím! ✨ Jsem tady, abych ti pomohl. Na co se chceš zeptat?',
+    'Čau! 🤖 Připravený odpovídat. Střílej – co tě zajímá?',
+    'Ahoj! 🚀 Vítej v Batelkově AI Chatu. Ptej se na cokoliv, pokusím se pomoct!',
+    'Hej! 💡 Jsem tvůj AI pomocník. Napiš mi, s čím ti můžu poradit.',
+    'Nazdar! 🎯 Jsem připravený. Co potřebuješ vyřešit?',
+    'Zdravíčko! 😊 Jsem Batelkův asistent – zeptej se mě na cokoliv.',
+    'Ahoj! 🌟 Rád tě tu vidím. O čem si dnes popovídáme?',
+    'Čau! 🔥 Jsem tady pro tebe. Jaký máš dotaz?',
+    'Vítej! ⚡ Jsem AI chat od Batelky. Jak ti můžu pomoct?',
+];
+
 if ($isNewSession) {
     $allHistory = loadHistory($chatFile);
     $allHistory[] = [
         'role'    => 'assistant',
-        'content' => 'Ahoj! 👋 Jsem Batelkův AI asistent. Můžeš se mě zeptat na cokoliv – rád pomůžu. Co pro tebe můžu udělat?',
+        'content' => $greetings[array_rand($greetings)],
         'time'    => date('c'),
         'session' => $sessionId,
     ];
