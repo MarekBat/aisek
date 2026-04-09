@@ -138,5 +138,17 @@
         "role": "assistant",
         "content": "Jasně, tady je jednoduchý Python script pro výpočet počtu dní v zadaném měsíci:\n\n```python\ndef pocet_dni_v_mesici(mesic):\n  \"\"\"\n  Vrací počet dní v zadaném měsíci.\n\n  Args:\n    mesic: Číslo měsíce (1-12).\n\n  Returns:\n    Počet dní v měsíci, nebo None, pokud je zadaný neplatný měsíc.\n  \"\"\"\n\n  if mesic in [4, 6, 9, 11]:\n    return 30\n  elif mesic == 2:\n    return 28  # Předpokládáme neleapový rok\n  elif mesic in [1, 3, 5, 7, 8, 10, 12]:\n    return 31\n  else:\n    return None\n\n# Příklad použití\nmesic = int(input(\"Zadej číslo měsíce (1-12): \"))\n\npocet_dni = pocet_dni_v_mesici(mesic)\n\nif pocet_dni is not None:\n  print(f\"Měsíc {mesic} má {pocet_dni} dní.\")\nelse:\n  print(\"Neplatný měsíc.\")\n```\n\n**Jak to funguje:**\n\n1.  **Funkce `pocet_dni_v_mesici(mesic)`:**\n    *   Přijímá číslo měsíce jako argument.\n    *   Používá `if\/elif\/else` k určení počtu dní v měsíci.\n    *   Vrací počet dní nebo `None`, pokud je zadaný neplatný měsíc.\n2.  **Příklad použití:**\n    *   Požádá uživatele o zadání čísla měsíce.\n    *   Volá funkci `pocet_dni_v_mesici()` s uživatelským vstupem.\n    *   Vypíše výsledek nebo chybovou zprávu.\n\n**Poznámky:**\n\n*   Tento script předpokládá neleapový rok pro únor. Pokud chceš zohlednit leapové roky, budeš muset přidat další logiku.\n*   Můžeš script upravit tak, aby se vypořádal s neplatným vstupem (např. pokud uživatel zadá text místo čísla).\n\nDoufám, že ti to pomůže! Pokud máš nějaké další otázky, dej mi vědět.\n",
         "time": "2026-04-09T08:26:07+00:00"
+    },
+    {
+        "role": "user",
+        "content": "ahoj šéfe",
+        "time": "2026-04-09T12:36:26+00:00",
+        "session": "84a42cb6711a6a48"
+    },
+    {
+        "role": "assistant",
+        "content": "Chyba API: Method doesn't allow unregistered callers (callers without established identity). Please use API Key or other form of API consumer identity to call this API.",
+        "time": "2026-04-09T12:36:27+00:00",
+        "session": "84a42cb6711a6a48"
     }
 ]

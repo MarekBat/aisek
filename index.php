@@ -6,6 +6,16 @@
  * - Historie v chat.json
  */
 
+session_start();
+
+// Unikátní ID pro každou relaci prohlížeče
+$isNewSession = false;
+if (!isset($_SESSION['chat_session_id'])) {
+    $_SESSION['chat_session_id'] = bin2hex(random_bytes(8));
+    $isNewSession = true;
+}
+$sessionId = $_SESSION['chat_session_id'];
+
 // ============================================================
 // KONFIGURACE
 // ============================================================
@@ -19,6 +29,7 @@ $chatFile = __DIR__ . '/chat.json';
 if (!is_writable($chatFile) && !is_writable(__DIR__)) {
     $chatFile = '/tmp/chat.json';
 }
+
 
 // Dostupné modely (label => model ID)
 $models = [
@@ -34,14 +45,22 @@ $models = [
 /**
  * Načte historii z JSON souboru. Vrací pole zpráv.
  */
-function loadHistory(string $file): array
+function loadHistory(string $file, ?string $sessionId = null): array
 {
     if (!file_exists($file)) {
         return [];
     }
     $json = file_get_contents($file);
     $data = json_decode($json, true);
-    return is_array($data) ? $data : [];
+    if (!is_array($data)) {
+        return [];
+    }
+    if ($sessionId !== null) {
+        $data = array_values(array_filter($data, function ($msg) use ($sessionId) {
+            return ($msg['session'] ?? '') === $sessionId;
+        }));
+    }
+    return $data;
 }
 
 /**
@@ -106,6 +125,21 @@ function callGoogleAI(string $apiKey, string $model, array $messages): string
 }
 
 // ============================================================
+// ÚVODNÍ ZPRÁVA PRO NOVOU RELACI
+// ============================================================
+
+if ($isNewSession) {
+    $allHistory = loadHistory($chatFile);
+    $allHistory[] = [
+        'role'    => 'assistant',
+        'content' => 'Ahoj! 👋 Jsem Batelkův AI asistent. Můžeš se mě zeptat na cokoliv – rád pomůžu. Co pro tebe můžu udělat?',
+        'time'    => date('c'),
+        'session' => $sessionId,
+    ];
+    saveHistory($chatFile, $allHistory);
+}
+
+// ============================================================
 // AJAX ENDPOINTY (POST requesty)
 // ============================================================
 
@@ -134,42 +168,53 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit;
         }
 
-        // Načti historii, přidej uživatelovu zprávu
-        $history = loadHistory($chatFile);
-        $history[] = [
+        // Načti celou historii a historii aktuální relace
+        $allHistory = loadHistory($chatFile);
+        $sessionHistory = loadHistory($chatFile, $sessionId);
+
+        $userMsg = [
             'role'    => 'user',
             'content' => $userMessage,
             'time'    => date('c'),
+            'session' => $sessionId,
         ];
+        $allHistory[] = $userMsg;
+        $sessionHistory[] = $userMsg;
 
-        // Zavolej API s celou historií (kontext)
-        $aiResponse = callGoogleAI($apiKey, $model, $history);
+        // Zavolej API jen s kontextem aktuální relace
+        $aiResponse = callGoogleAI($apiKey, $model, $sessionHistory);
 
         // Přidej odpověď AI
-        $history[] = [
+        $aiMsg = [
             'role'    => 'assistant',
             'content' => $aiResponse,
             'time'    => date('c'),
+            'session' => $sessionId,
         ];
+        $allHistory[] = $aiMsg;
 
-        saveHistory($chatFile, $history);
+        saveHistory($chatFile, $allHistory);
 
         echo json_encode([
             'reply' => $aiResponse,
-            'time'  => end($history)['time'],
+            'time'  => $aiMsg['time'],
         ]);
         exit;
     }
 
     // --- Načtení historie ---
     if ($action === 'history') {
-        echo json_encode(loadHistory($chatFile));
+        echo json_encode(loadHistory($chatFile, $sessionId));
         exit;
     }
 
-    // --- Vymazání chatu ---
+    // --- Vymazání chatu (jen aktuální relace) ---
     if ($action === 'clear') {
-        saveHistory($chatFile, []);
+        $allHistory = loadHistory($chatFile);
+        $allHistory = array_values(array_filter($allHistory, function ($msg) use ($sessionId) {
+            return ($msg['session'] ?? '') !== $sessionId;
+        }));
+        saveHistory($chatFile, $allHistory);
         echo json_encode(['ok' => true]);
         exit;
     }
@@ -188,6 +233,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batelkův AI Chat</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Batelkův AI Chat – jednoduchý chatbot poháněný Google Gemma. Ptej se na cokoliv.">
+    <meta name="author" content="Batelka">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Batelkův AI Chat">
+    <meta property="og:description" content="Jednoduchý chatbot poháněný Google Gemma. Ptej se na cokoliv.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="cs_CZ">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Batelkův AI Chat">
+    <meta name="twitter:description" content="Jednoduchý chatbot poháněný Google Gemma. Ptej se na cokoliv.">
+    <meta name="theme-color" content="#6c5ce7">
+
+    <!-- Favicon (inline SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236c5ce7'/><text x='50' y='72' font-size='60' text-anchor='middle' fill='white'>✦</text></svg>">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
