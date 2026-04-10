@@ -1,0 +1,50 @@
+{
+    "_info": "Konfigurace barev a vzhledu chatu. Změny se projeví okamžitě bez úpravy CSS.",
+
+    "name": "Default Dark",
+
+    "body-bg":              "#0f0f1a",
+    "body-text":            "#e4e4e7",
+    "glow-1":               "rgba(88, 80, 236, .15)",
+    "glow-2":               "rgba(131, 56, 236, .1)",
+    "glow-3":               "rgba(56, 152, 236, .08)",
+
+    "container-bg":         "rgba(22, 22, 35, .85)",
+    "container-border":     "rgba(255,255,255,.06)",
+    "container-radius":     "24px",
+
+    "header-bg":            "rgba(255,255,255,.03)",
+    "header-title":         "#f0f0f3",
+
+    "accent-start":         "#6c5ce7",
+    "accent-end":           "#a855f7",
+    "accent-glow":          "rgba(108, 92, 231, .35)",
+
+    "user-bubble-start":    "#4f46e5",
+    "user-bubble-end":      "#7c3aed",
+    "user-bubble-text":     "#f0f0ff",
+    "user-bubble-glow":     "rgba(79,70,229,.3)",
+    "user-avatar-start":    "#3b82f6",
+    "user-avatar-end":      "#06b6d4",
+
+    "ai-bubble-bg":         "rgba(255,255,255,.06)",
+    "ai-bubble-border":     "rgba(255,255,255,.07)",
+    "ai-bubble-text":       "#dcdce4",
+
+    "input-bg":             "rgba(255,255,255,.05)",
+    "input-border":         "rgba(255,255,255,.1)",
+    "input-text":           "#e4e4e7",
+    "input-focus-border":   "rgba(168,85,247,.5)",
+    "input-focus-glow":     "rgba(168,85,247,.1)",
+
+    "link-color":           "#a78bfa",
+    "link-hover":           "#c4b5fd",
+    "code-bg":              "rgba(255,255,255,.1)",
+    "pre-bg":               "rgba(0,0,0,.35)",
+    "blockquote-border":    "rgba(167, 139, 250, .5)",
+    "blockquote-color":     "#b0b0c0",
+
+    "typing-dot":           "#a78bfa",
+    "delete-color":         "#ef6b6b",
+    "scrollbar":            "rgba(255,255,255,.1)"
+}

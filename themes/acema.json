@@ -1,0 +1,50 @@
+{
+    "_info": "Téma podle brandu www.acema.cz – nastavte THEME=acema v env proměnných.",
+
+    "name": "Acema Credit",
+
+    "body-bg":              "#F0F2F7",
+    "body-text":            "#3F5470",
+    "glow-1":               "rgba(84, 209, 116, .08)",
+    "glow-2":               "rgba(15, 40, 76, .06)",
+    "glow-3":               "rgba(164, 187, 224, .1)",
+
+    "container-bg":         "rgba(255, 255, 255, .95)",
+    "container-border":     "rgba(15, 40, 76, .1)",
+    "container-radius":     "24px",
+
+    "header-bg":            "rgba(15, 40, 76, .03)",
+    "header-title":         "#0F284C",
+
+    "accent-start":         "#54D174",
+    "accent-end":           "#58AD73",
+    "accent-glow":          "rgba(84, 209, 116, .25)",
+
+    "user-bubble-start":    "#0F284C",
+    "user-bubble-end":      "#1a3d6b",
+    "user-bubble-text":     "#ffffff",
+    "user-bubble-glow":     "rgba(15, 40, 76, .2)",
+    "user-avatar-start":    "#0F284C",
+    "user-avatar-end":      "#3F5470",
+
+    "ai-bubble-bg":         "rgba(15, 40, 76, .04)",
+    "ai-bubble-border":     "rgba(15, 40, 76, .1)",
+    "ai-bubble-text":       "#3F5470",
+
+    "input-bg":             "rgba(15, 40, 76, .03)",
+    "input-border":         "rgba(15, 40, 76, .15)",
+    "input-text":           "#0F284C",
+    "input-focus-border":   "rgba(84, 209, 116, .6)",
+    "input-focus-glow":     "rgba(84, 209, 116, .15)",
+
+    "link-color":           "#54D174",
+    "link-hover":           "#58AD73",
+    "code-bg":              "rgba(15, 40, 76, .06)",
+    "pre-bg":               "rgba(15, 40, 76, .04)",
+    "blockquote-border":    "rgba(84, 209, 116, .5)",
+    "blockquote-color":     "#3F5470",
+
+    "typing-dot":           "#54D174",
+    "delete-color":         "#dc2626",
+    "scrollbar":            "rgba(15, 40, 76, .12)"
+}

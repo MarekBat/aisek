@@ -20,19 +20,20 @@ $sessionId = $_SESSION['chat_session_id'];
 // KONFIGURACE
 // ============================================================
 
-// API klíč – priorita: env proměnná > .env soubor
-$apiKey = getenv('GOOGLE_AI_API_KEY') ?: '';
-if ($apiKey === '' && file_exists(__DIR__ . '/.env')) {
+// Načtení .env souboru – lokální vývoj
+$dotenv = [];
+if (file_exists(__DIR__ . '/.env')) {
     foreach (file(__DIR__ . '/.env', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
         if (str_starts_with($line, '#')) continue;
         if (str_contains($line, '=')) {
             [$key, $val] = explode('=', $line, 2);
-            if (trim($key) === 'GOOGLE_AI_API_KEY') {
-                $apiKey = trim($val);
-            }
+            $dotenv[trim($key)] = trim($val);
         }
     }
 }
+
+// API klíč – priorita: env proměnná > .env soubor
+$apiKey = getenv('GOOGLE_AI_API_KEY') ?: ($dotenv['GOOGLE_AI_API_KEY'] ?? '');
 
 // Soubor s historií – zkusí lokální cestu, pokud není zapisovatelná, použije /tmp
 $chatFile = __DIR__ . '/chat.json';
@@ -57,6 +58,13 @@ foreach ($modelsData as $modelId => $info) {
 
 // Systémové instrukce pro AI – uprav v souboru system-prompt.txt
 $systemInstruction = @file_get_contents(__DIR__ . '/system-prompt.txt') ?: '';
+
+// Načtení tématu – název se bere z env THEME (default: dark)
+$themeName = getenv('THEME') ?: ($dotenv['THEME'] ?? 'dark');
+$themeName = preg_replace('/[^a-z0-9_\-]/i', '', $themeName); // sanitize
+$themeFile = __DIR__ . "/themes/{$themeName}.json";
+if (!file_exists($themeFile)) $themeFile = __DIR__ . '/themes/dark.json';
+$theme = json_decode(@file_get_contents($themeFile), true) ?: [];
 
 // ============================================================
 // POMOCNÉ FUNKCE
@@ -206,18 +214,7 @@ if ($isNewSession) {
 // ADMIN ENDPOINT (?admin=SECRET)
 // ============================================================
 
-$adminSecret = getenv('ADMIN_SECRET') ?: '';
-if ($adminSecret === '' && file_exists(__DIR__ . '/.env')) {
-    foreach (file(__DIR__ . '/.env', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
-        if (str_starts_with($line, '#')) continue;
-        if (str_contains($line, '=')) {
-            [$key, $val] = explode('=', $line, 2);
-            if (trim($key) === 'ADMIN_SECRET') {
-                $adminSecret = trim($val);
-            }
-        }
-    }
-}
+$adminSecret = getenv('ADMIN_SECRET') ?: ($dotenv['ADMIN_SECRET'] ?? '');
 
 if (isset($_GET['admin']) && $adminSecret !== '' && hash_equals($adminSecret, $_GET['admin'])) {
     header('Content-Type: application/json; charset=utf-8');
@@ -349,10 +346,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Batelkův AI Chat">
     <meta name="twitter:description" content="Jednoduchý chatbot poháněný Google Gemma. Ptej se na cokoliv.">
-    <meta name="theme-color" content="#6c5ce7">
+    <meta name="theme-color" content="<?= htmlspecialchars($theme['accent-start'] ?? '#6c5ce7') ?>">
 
     <!-- Favicon (inline SVG) -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236c5ce7'/><text x='50' y='72' font-size='60' text-anchor='middle' fill='white'>✦</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='<?= rawurlencode($theme['accent-start'] ?? '#6c5ce7') ?>'/><text x='50' y='72' font-size='60' text-anchor='middle' fill='white'>✦</text></svg>">
+
+    <?php
+    // Generování CSS custom properties z theme.json
+    if ($theme) {
+        $skip = ['_info', 'name'];
+        echo "<style>:root{";
+        foreach ($theme as $key => $value) {
+            if (in_array($key, $skip, true)) continue;
+            $key = preg_replace('/[^a-z0-9\-]/', '', $key);
+            echo "--{$key}:{$value};";
+        }
+        echo "}</style>\n";
+    }
+    ?>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">

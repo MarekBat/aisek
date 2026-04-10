@@ -1,0 +1,50 @@
+{
+    "_info": "Světlé téma – nastavte THEME=light v env proměnných.",
+
+    "name": "Clean Light",
+
+    "body-bg":              "#f0f2f5",
+    "body-text":            "#1a1a2e",
+    "glow-1":               "rgba(99, 102, 241, .08)",
+    "glow-2":               "rgba(168, 85, 247, .06)",
+    "glow-3":               "rgba(59, 130, 246, .05)",
+
+    "container-bg":         "rgba(255, 255, 255, .92)",
+    "container-border":     "rgba(0,0,0,.08)",
+    "container-radius":     "24px",
+
+    "header-bg":            "rgba(0,0,0,.02)",
+    "header-title":         "#1a1a2e",
+
+    "accent-start":         "#6c5ce7",
+    "accent-end":           "#a855f7",
+    "accent-glow":          "rgba(108, 92, 231, .2)",
+
+    "user-bubble-start":    "#4f46e5",
+    "user-bubble-end":      "#7c3aed",
+    "user-bubble-text":     "#ffffff",
+    "user-bubble-glow":     "rgba(79,70,229,.15)",
+    "user-avatar-start":    "#3b82f6",
+    "user-avatar-end":      "#06b6d4",
+
+    "ai-bubble-bg":         "rgba(0,0,0,.04)",
+    "ai-bubble-border":     "rgba(0,0,0,.08)",
+    "ai-bubble-text":       "#2d2d3a",
+
+    "input-bg":             "rgba(0,0,0,.03)",
+    "input-border":         "rgba(0,0,0,.12)",
+    "input-text":           "#1a1a2e",
+    "input-focus-border":   "rgba(108,92,231,.5)",
+    "input-focus-glow":     "rgba(108,92,231,.12)",
+
+    "link-color":           "#6c5ce7",
+    "link-hover":           "#4f46e5",
+    "code-bg":              "rgba(0,0,0,.06)",
+    "pre-bg":               "rgba(0,0,0,.04)",
+    "blockquote-border":    "rgba(108, 92, 231, .4)",
+    "blockquote-color":     "#555566",
+
+    "typing-dot":           "#6c5ce7",
+    "delete-color":         "#dc2626",
+    "scrollbar":            "rgba(0,0,0,.12)"
+}
