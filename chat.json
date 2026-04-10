@@ -156,5 +156,197 @@
         "content": "Ahoj! 👋 Jsem Batelkův AI asistent. Můžeš se mě zeptat na cokoliv – rád pomůžu. Co pro tebe můžu udělat?",
         "time": "2026-04-09T12:44:08+00:00",
         "session": "ed18e947b72c0396"
+    },
+    {
+        "role": "user",
+        "content": "Testuji",
+        "time": "2026-04-10T08:51:28+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "*   User input: \"Testuji\"\n    *   Language: Czech.\n    *   Meaning: \"I am testing\" or \"Testing\" (from the verb *testovat*).\n    *   Intent: The user is checking if the AI is working or responding.\n\n    *   Acknowledge the test.\n    *   Confirm that the system is operational.\n    *   Ask how I can help.\n    *   Language should match the user's (Czech).\n\n    *   *Option 1 (Simple):* \"Funguje to.\" (It works.)\n    *   *Option 2 (Polite\/Helpful):* \"Ahoj! Test proběhl úspěšně. S čím vám mohu pomoci?\" (Hi! The test was successful. How can I help you?)\n    *   *Option 3 (Casual):* \"Jasně, slyším tě! Co můžu pro tebe udělat?\" (Sure, I hear you! What can I do for you?)\n\n    *   \"Test proběhl úspěšně! Funguji. S čím vám mohu pomoci?\" (Test successful! I'm working. How can I help you?)",
+        "time": "2026-04-10T08:51:37+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "Ahoj, jak se ti daří?",
+        "time": "2026-04-10T08:51:54+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "*   User: \"Ahoj, jak se ti daří?\" (Hi, how are you doing?)\n    *   Language: Czech.\n    *   Intent: Casual greeting and inquiry about well-being.\n\n    *   As an AI, I don't have feelings, but I should respond politely and helpfully in a conversational tone.\n    *   Standard AI response pattern: \"I'm doing well\/functioning correctly, thank you for asking. How about you?\"\n\n    *   *Draft 1:* Mám se dobře, děkuji. A vy? (I'm well, thank you. And you?) - *A bit formal.*\n    *   *Draft 2:* Ahoj! Mám se skvěle, díky za optání. Jak se daří tobě? (Hi! I'm doing great, thanks for asking. How are you doing?) - *Better, more friendly.*\n    *   *Draft 3 (More precise for an AI):* Ahoj! Jako AI nemám pocity, ale funguji perfektně a jsem připraven pomáhat. A jak se daří tobě? (Hi! As an AI I don't have feelings, but I'm functioning perfectly and I'm ready to help. And how are you doing?) - *Accurate but maybe a bit too robotic.*\n\n    *   Combine friendliness with a touch of \"AI identity\" but keep it natural.\n    *   \"Ahoj! Mám se skvěle, děkuji za optání. 😊 Jsem připraven pomoci s čímkoliv, co budeš potřebovat. A jak se daří tobě? Co máš dnes v plánu?\" (Hi! I'm doing great, thanks for asking. I'm ready to help with whatever you need. And how are you? What do you have planned for today?)",
+        "time": "2026-04-10T08:52:07+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "ahoj",
+        "time": "2026-04-10T08:52:22+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "*   User: \"ahoj\" (hi)\n    *   Language: Czech\n    *   Intent: Simple greeting.\n\n    *   Respond with a similar level of formality. A simple \"ahoj\" back is perfectly acceptable, but adding a question to encourage further interaction is better.\n\n    *   *Option 1 (Simple):* Ahoj!\n    *   *Option 2 (Friendly):* Ahoj! Jak se máš? (Hi! How are you?)\n    *   *Option 3 (Engaging):* Ahoj! S čím ti můžu pomoct? (Hi! How can I help you?)\n\n    *   \"Ahoj! S čím ti můžu pomoct?\" (Hi! How can I help you?)",
+        "time": "2026-04-10T08:52:35+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "ahoj",
+        "time": "2026-04-10T08:54:29+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "Chyba API: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+        "time": "2026-04-10T08:54:30+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "ahoj",
+        "time": "2026-04-10T08:54:35+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "Chyba API: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits. To monitor your current usage, head to: https:\/\/ai.dev\/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count, limit: 0, model: gemini-3.1-pro\nPlease retry in 24.504464843s.",
+        "time": "2026-04-10T08:54:35+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "ahoj",
+        "time": "2026-04-10T08:54:44+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "Ahoj! Teď už to funguje. Omlouvám se za ty předchozí technické chyby. \n\nS čím ti můžu pomoct? :)",
+        "time": "2026-04-10T08:54:53+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "ukaž formátování příklad?",
+        "time": "2026-04-10T08:55:00+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "Jasně! Používám tzv. **Markdown**, což je jednoduchý způsob, jak text zřetelněji a přehledněji strukturovat. Tady je ukázka toho nejdůležitějšího, co umím:\n\n---\n\n# 1. Nadpisy (Headings)\nMůžu vytvářet různé úrovně nadpisů, aby byl text přehledný:\n# Toto je největší nadpis (H1)\n## Toto je střední nadpis (H2)\n### Toto je malý nadpis (H3)\n\n---\n\n# 2. Základní formátování textu\n*   *Kurzíva (Šikmo)* – pro zdůraznění nebo citace.\n*   **Tučný text** – pro důležité pojmy.\n*   ***Tučná kurzíva*** – pro extra důraz.\n*   ~~Přškrtnutý text~~ – pro věci, které už neplatí.\n\n---\n\n# 3. Seznamy\n**Odrážkový seznam (nepořádaný):**\n*   Jablka\n*   Banány\n*    pomeranče\n    *   Krvavé pomeranče (podpoložka)\n\n**Číslovaný seznam (pořádaný):**\n1. První krok\n2. Druhý krok\n3. Třetí krok\n\n---\n\n# 4. Tabulky\nTabulky jsou skvělé pro srovnání dat:\n\n| Produkt | Cena | Skladem |\n| :--- | :---: | :---: |\n| Notebook | 15 000 Kč | ✅ |\n| Myš | 500 Kč | ✅ |\n| Monitor | 3 000 Kč | ❌ |\n\n---\n\n# 5. Kód a technické texty\nPokud potřebuješ napsat programovací kód nebo příkaz do terminálu, použiji speciální bloky:\n\n`print(\"Ahoj světe\")` $\\leftarrow$ *toto je kód v textu (inline)*\n\nA tady je samostatný blok s Pythonem:\n```python\ndef pozdrav(jmeno):\n    return f\"Ahoj {jmeno}, vítej u ukázky formátování!\"\n\nprint(pozdrav(\"Uživatel\"))\n```\n\n---\n\n# 6. Citace a poznámky\n> \"Tohle je citace. Používá se k tomu, aby bylo jasné, že text pochází z jiného zdroje nebo je to důležitý výňatek.\"\n\n---\n\n**Potřebuješ, abych ti něco konkrétního zformátoval (např. tabulku s daty, seznam úkolů nebo kód)? Stačí říct!**",
+        "time": "2026-04-10T08:55:30+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "Paráda. Napiš mi recept na banán v čokoládě",
+        "time": "2026-04-10T08:58:47+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "Tady je jednoduchý a skvělý recept na **banány v čokoládě**. Je to perfektní zdravější sladkost, která chutná dětiem i dospělým.\n\n# 🍌 Banány v čokoládě\n\nTento dezert je nejlepší, když je banán uvnitř mírně zmražený – vytvoří to příjemný kontrast s křupavou čokoládou.\n\n---\n\n### 🛒 Ingredience\n\n**Základ:**\n*   **2-3 zralé banány** (ale ne příliš rozmačkané)\n*   **150–200 g čokolády** (tmavá, mléčná nebo bílá – podle chuti)\n*   **1 lžíce kokosového oleje** (volitelné, ale čokoláda bude tekutější a lesklější)\n*   **Špejle nebo dřevěné vrátka** na zmrzlinu\n\n**Na ozdobení (podle nálady):**\n*   Hakové ořechy nebo mandle (drtené)\n*   Kokosové strouhanky\n*   Barevné cukrové kuličky\n*   Špetka soli (skvěle zvýrazní chuť tmavé čokolády)\n\n---\n\n### 👨‍🍳 Postup krok za krokem\n\n1.  **Příprava banánů:**\n    *   Banány oloupejte a podélně rozřežte na poloviny (nebo na třetiny, pokud chcete menší porce).\n    *   Do každého kousku zapíchněte špejli nebo vrátko tak, aby drželo stabilně.\n2.  ** Předmrazování (Důležitý krok!):**\n    *   Banány položte na tác vyložený pečicím papírem a dejte je do mrazáku zhruba na **1–2 hodiny**. Díky tomu čokoláda na nich ztuhne okamžitě a nebudou se \"klouzat\".\n3.  **Roztavení čokolády:**\n    *   Čokoládu nadrobte do misky a přidejte kokosový olej.\n    *   Rozpusťte ji buď **ve vodní lázni** (miska nad hrncem s vroucí vodou, ale miska se nesmí dotýkat vody), nebo v **mikrovlnce** (krátkými intervaly po 30 sekundách a mezitím míchat, aby se čokoláda nespálila).\n4.  **Koupel v čokoládě:**\n    *   Zmražený banán opatrně ponořte do tekuté čokolády a rovnoměrně jím zatočte.\n    *   Zlehka oklepejte přebytečnou čokoládu.\n5.  **Zdobení:**\n    *   Dokud je čokoláda ještě tekutá, posypte banán ořechy, kokosem nebo kuličkami.\n6.  **Finální ztuhnutí:**\n    *   Banány znovu položte na papír a dejte je do mrazáku ještě na **15–30 minut**, dokud čokoláda úplně neztuhne.\n\n---\n\n### 💡 Tipy pro nejlepší výsledek\n\n| Tip | Proč to udělat? |\n| :--- | :--- |\n| **Špetka soli** | Pokud použijete tmavou čokoládu, sůl zvýrazní její hloubku. |\n| **Vrstvení** | Můžete banány namočit do bílé čokolády, nechat ztuhnout a pak znovu do tmavé pro efekt pruhů. |\n| **Skladování** | Skladujte v mrazáku v uzavíratelném boxu, aby do nich nepronikly pachy jiných potravin. |\n\n**Dobrou chuť! 😋**",
+        "time": "2026-04-10T08:59:26+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "Napiš recept na toasty",
+        "time": "2026-04-10T09:03:47+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "Chyba API: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+        "time": "2026-04-10T09:03:58+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "Napiš recept na toasty",
+        "time": "2026-04-10T09:04:07+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "Toasty jsou sice jednoduché, ale existuje velký rozdíl mezi „jenom zapéctým chlebem“ a dokonalým, křupavým toastem s táhnoucím se sýrem. Tady je návod na klasiku a pár tipů, jak je vylepšit.\n\n# 🍞 Dokonalé sýro-šunkové toasty\n\nTento recept je zaměřen na klasickou kombinaci, která nikdy nezklame.\n\n---\n\n### 🛒 Ingredience (na 2 toasty)\n*   **4 plátky toastového chleba** (bílá, celozrnná nebo žitná)\n*   **4 plátky kvalitní šunky**\n*   **8–12 plátků sýra** (nejlépe takové, které dobře taje – např. ementaler, gouda, čedar nebo mozzarella)\n*   **Máslo** (na potření vnější strany chleba – to je tajemství křupavosti!)\n*   **Volitelně:** Trocha hořčice, majonézy nebo plátku rajčate.\n\n---\n\n### 👨‍🍳 Postup\n\n1.  **Příprava chleba:**\n    *   Každý plátek chleba potřete **tenkou vrstvou másla na vnější stranu** (tu, která bude v kontaktu s pánví nebo toastovačem). Díky tomu budou toasty krásně zlatavé a křupavé.\n2.  **Skládání vrstev:**\n    *   Na vnitřní stranu plátku dejte vrstvu sýra.\n    *   Na sýr položte šunku (a případně hořčici nebo plátek rajčate).\n    *   Navrch přidejte další vrstvu sýra (sýr na obou stranách šunky funguje jako „lepidlo“, aby se toast nerozpadl).\n    *   Přikryjte druhým plátkem chleba (máslem opět navenek).\n3.  **Opékání:**\n    *   **V toastovači:** Vložte toast a zapněte přístroj. Pečte, dokud přístroj nepípne nebo dokud není chléb zlatý a sýr rozteklý.\n    *   **Na pánvi:** Rozehřejte pánev na střední teplotu. Toast položte na pánev a mírně na něj přitlačte (např. jinou pánví nebo špachtlí). Opékejte z každé strany cca 3–4 minuty dozlatova.\n\n---\n\n### 🌟 Varianty pro gurmány\n\nPokud chcete zkusit něco jiného než šunku a sýr, vyzkoušejte tyto kombinace:\n\n| Typ toastu | Co dovnitř dát? | Tip |\n| :--- | :--- | :--- |\n| **Caprese** | Mozzarella, plátek rajčate, bazalka, kapka pesto. | Skvělé s bílým toastovým chlebem. |\n| **Avokádo & vejce** | Rozmačkané avokádo, plátek sýra a vajíčko na tvrdý. | Přidejte špetku chilli vloček. |\n| **Sladký banán** | Arašídové máslo, plátky banánu, trocha medu. | Místo sýra použijte vnitřní vrstvu z másla. |\n| **Mexický** | Sýr čedar, kukuřice, nadrobné jalapeños, červená cibule. | Podávejte s dipem ze zakysané smetany. |\n\n---\n\n### 💡 Tipy pro nejlepší výsledek\n*   **Nespálte je:** Pokud máte toastovač, který nejde regulovat, hlídejte je. Lepší je péct déle na nižší teplotě, aby sýr stihl tajět dříve, než chléb shoří.\n*   **Kvalita sýra:** Vyhněte se „plátkovým sýrům“ z levných balení, které netají. Kupte si kousek skutečného sýra a nakrájejte si ho sami.\n*   **Křupavost:** Pokud nemáte rádi máslo, můžete zkusit potřít vnější stranu chleba velmi jemnou vrstvou **majonézy**. Zní to divně, ale v USA je to tajný trik pro nejkřupavější toasty na světě!\n\n**Dobrou chuť! 🥪**",
+        "time": "2026-04-10T09:04:49+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "Napiš mi prosím recept na tatarák.",
+        "time": "2026-04-10T09:14:26+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "Chyba API: This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+        "time": "2026-04-10T09:14:28+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "Napiš mi prosím recept na tatarák.",
+        "time": "2026-04-10T09:14:40+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "Chyba API: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits. To monitor your current usage, head to: https:\/\/ai.dev\/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count, limit: 0, model: gemini-3.1-pro\nPlease retry in 19.702354711s.",
+        "time": "2026-04-10T09:14:40+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "Napiš mi prosím recept na tatarák.",
+        "time": "2026-04-10T09:14:49+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "Tatarák (hovězí tatarák) je naprostá klasika českých restaurací. Aby byl opravdu skvělý, je klíčové vybrat **kvalitní maso** a dodržet správný poměr chutí. \n\nTady je recept na tradiční tatarák s našimi oblíbenými topinkami.\n\n# 🥩 Tradiční hovězí tatarák\n\nTajemství dobrého tataráku je v tom, že maso **nikdy nemlet**, ale vždy jemně posekat nožem. Tím se zachová správná struktura a chuť.\n\n---\n\n### 🛒 Ingredience\n\n**Hlavní suroviny:**\n*   **500 g hovězího masa** (nejlepší je hovězí filé nebo zadní – musí být velmi kvalitní a čerstvé)\n*   **1 střední cibule** (bílá nebo šalotka), nadrobno nakrájená\n*   **2–3 polévkové lžíce majonézy** (pro krémovost)\n*   **1 lžíce plnotučné hořčice**\n*   **1–2 lžíce kečupu** (tradiční český styl)\n*   **1 lžička Worcestershire omáčky** (dodá hloubku chuti, pokud nemáte, můžete vynechat)\n*   **Sůl a čerstvě mletý černý pepř**\n*   **Trocha slunečnicového nebo olivového oleje**\n\n**K podávání (Topinky):**\n*   **Žitný chléb** (nekrájený)\n*   **Máslo**\n*   **Česnek** (celé stroužky)\n*   **Sůl**\n\n---\n\n### 👨‍🍳 Postup krok za krokem\n\n1.  **Příprava masa (Klíčový krok):**\n    *   Maso nejprve dejte na 30 minut do mrazáku. Polozmrazené maso se mnohem lépe a čistěji krájí.\n    *   Maso nejdříve nakrájejte na tenké plátky, poté na proužky a nakonec na **velmi drobné kostičky**.\n2.  **Míchání základů:**\n    *   Do mísy dejte posekané maso a přidejte nadrobno nakrájenou cibuli.\n    *   Přidejte majonézu, hořčici, kečup a Worcestershire omáčku.\n3.  **Dochucení:**\n    *   Vše důkladně promíchejte. \n    *   Postupně přidejte sůl a pepř. **Pozor:** Sůl s masem reaguje a mění jeho barvu (z červené na šedou), proto tatarák dochuťte a ihned podávejte, nebo ho nechte jen krátce odpočinout v lednici.\n    *   Na závěr vmíchejte trochu oleje, aby byl tatarák krásně lesklý.\n4.  **Příprava topinek:**\n    *   Chléb nakrájejte na plátky a opečte je v toastovači, na pánvi nebo v troubě dozlatova.\n    *   Horké topinky potřete máslem a následně je **potřete rozkrojeným stroužkem česneku**. Posypejte špetkou soli.\n\n---\n\n### 💡 Tipy pro nejlepší výsledek\n\n| Co hlídat? | Proč? |\n| :--- | :--- |\n| **Kvalita masa** | Protože maso nejíte tepelně upravené, kupte ho v důvěryhodném řeznictví a řekněte, že je na tatarák. |\n| **Teplota** | Tatarák by měl být studený. Míse, ve které ho mícháte, můžete dát předem do lednice. |\n| **Struktura** | Pokud maso rozmixujete v robotu, vznikne \"paštika\". Ruční sekání je základem správné textury. |\n| **Variace** | Pro modernější verzi vyzkoušejte místo kečupu přidat kapku tabaska nebo čerstvé kaprky. |\n\n**Servírování:** \nTatarák dejte doprostřed talíře, zvrch zformujte do kopečku a ozdobte plátkem cibule nebo petrželkou. Podávejte s topinkami a případně s trochou rukoly.\n\n**Dobrou chuť! 😋**",
+        "time": "2026-04-10T09:15:35+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "napiš rcept na uvaření vajíčka",
+        "time": "2026-04-10T09:18:26+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "Chyba API: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits. To monitor your current usage, head to: https:\/\/ai.dev\/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 33.55252858s.",
+        "time": "2026-04-10T09:18:26+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "napiš rcept na uvaření vajíčka",
+        "time": "2026-04-10T09:18:40+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "Uvařit vejce se může zdát jako nejjednodušší věc na světě, ale rozdíl mezi \"tekutým\" a \"převařeným\" je jen pár minut. Tady je kompletní průvodce, jak dosáhnout přesně toho výsledku, který chceš.\n\n# 🥚 Jak uvařit dokonalé vejce\n\nExistují dvě hlavní školy: vejce vkládat do studené vody nebo do vroucí. Já doporučuji **studený start**, protože vejce v něm méně praskají.\n\n---\n\n### 🛒 Co budeš potřebovat\n*   **Vejce** (ideálně pokojové teploty, aby nepraskla)\n*   **Voda**\n*   **Špetka soli** (pomáhá při loupaní a pokud vejce praskne, bílek ztuhne rychleji)\n*   **Ledová voda** (na šokování po uvaření)\n\n---\n\n### 👨‍🍳 Postup\n\n1.  **Vložení:** Vejce opatrně polož do hrnce a zalij studenou vodou tak, aby byla zakrytá cca 2 cm nad hladinou. Přidej špetku soli.\n2.  **Ohřev:** Zapni plamen na maximum a přiveď vodu k varu.\n3.  **Časování:** Jakmile voda začne **silně vřít**, stáhni plamen na mírný (aby vejce v hrnci ne \"skákala\" a nepraskala) a **zapni stopky**.\n4.  **Chlazení (Šokování):** Jakmile stopky zazvoní, vejce okamžitě vyndej z horké vody a dej je do misky s **ledovou vodou**. Nech je tam 2–3 minuty. To zastaví proces vaření a zajistí, že se budou lépe loupat.\n\n---\n\n### ⏱️ Tabulka časů (od momentu varu vody)\n\nPodle toho, jaký žloutek preferuješ, volte tento čas:\n\n| Čas | Typ vejce | Stav žloutku | Stav bílku |\n| :--- | :--- | :--- | :--- |\n| **3–4 min** | **Měkké** | Tekutý | Jemně tuhý (stěna) |\n| **5–6 min** | **Hroznový (Medium)** | Krémový, polotekutý | Plně tuhý |\n| **8–10 min** | **Tvrdé** | Plně tuhý, žlutý | Plně tuhý |\n| **12+ min** | **Převařené** | Šedý okraj kolem žloutku | Příliš tuhý \/ gumový |\n\n---\n\n### 💡 Tipy pro profíky\n\n*   **Aby se lépe loupal:** Starší vejce se loupe lépe než úplně čerstvá. Pokud máš velmi čerstvá vejce, přidej do vody lžíci octa.\n*   **Jak poznat, že je vejce zkažené?** Dej ho do sklenice s vodou. Pokud klesne ke dnu, je dobré. Pokud plave na hladině, vyhoď ho – už není čerstvé.\n*   **Pozor na převaření:** Pokud vejce necháš ve vodě příliš dlouho (nad 12 minut), kolem žloutku vznikne nevzhledný šedozelený okraj. Chuť je sice v pořádku, ale vypadá to méně lákavě.\n\n**Dobrou chuť! 🍳**",
+        "time": "2026-04-10T09:19:16+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "user",
+        "content": "děkuju šéfe",
+        "time": "2026-04-10T09:21:54+00:00",
+        "session": "c65d241e97c5361f"
+    },
+    {
+        "role": "assistant",
+        "content": "Není zač, šéfe! 😊 Kdykoliv budeš potřebovat další recept, tip nebo s čímkoliv jiným pomoct, stačí napsat.\n\nDobrou chuť u všeho, co si uvaříš! 👨‍🍳🍳",
+        "time": "2026-04-10T09:22:07+00:00",
+        "session": "c65d241e97c5361f"
     }
 ]

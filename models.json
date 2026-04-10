@@ -1,0 +1,20 @@
+{
+    "_info": "Nastav 'enabled' na true/false pro povolení/zakázání modelu. Nastav 'default' na true u jednoho modelu pro výchozí výběr.",
+
+    "gemini-2.5-flash":              { "label": "Gemini 2.5 Flash",              "enabled": true },
+    "gemini-2.5-pro":                { "label": "Gemini 2.5 Pro",                "enabled": true },
+    "gemini-2.5-flash-lite":         { "label": "Gemini 2.5 Flash Lite",         "enabled": true },
+    "gemini-2.0-flash":              { "label": "Gemini 2.0 Flash",              "enabled": true },
+    "gemini-2.0-flash-lite":         { "label": "Gemini 2.0 Flash Lite",         "enabled": true },
+    "gemini-3-pro-preview":          { "label": "Gemini 3 Pro (preview)",        "enabled": true },
+    "gemini-3-flash-preview":        { "label": "Gemini 3 Flash (preview)",      "enabled": true },
+    "gemini-3.1-pro-preview":        { "label": "Gemini 3.1 Pro (preview)",      "enabled": true },
+    "gemini-3.1-flash-lite-preview": { "label": "Gemini 3.1 Flash Lite (preview)", "enabled": true },
+    "gemma-4-31b-it":                { "label": "Gemma 4 31B",                   "enabled": true, "default": true },
+    "gemma-4-26b-a4b-it":            { "label": "Gemma 4 26B",                   "enabled": true },
+    "gemma-3-27b-it":                { "label": "Gemma 3 27B",                   "enabled": true },
+    "gemma-3-12b-it":                { "label": "Gemma 3 12B",                   "enabled": true },
+    "gemma-3-4b-it":                 { "label": "Gemma 3 4B",                    "enabled": true },
+    "gemma-3n-e4b-it":               { "label": "Gemma 3n E4B",                  "enabled": true },
+    "gemma-3n-e2b-it":               { "label": "Gemma 3n E2B",                  "enabled": true }
+}
