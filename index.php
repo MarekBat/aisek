@@ -75,6 +75,8 @@ function loadHistory(string $file, ?string $sessionId = null): array
     if (!is_array($data)) {
         return [];
     }
+    // Soubor je uložen sestupně (nejnovější nahoře) – obrátíme na chronologické pořadí
+    $data = array_reverse($data);
     if ($sessionId !== null) {
         $data = array_values(array_filter($data, function ($msg) use ($sessionId) {
             return ($msg['session'] ?? '') === $sessionId;
@@ -88,7 +90,9 @@ function loadHistory(string $file, ?string $sessionId = null): array
  */
 function saveHistory(string $file, array $history): void
 {
-    file_put_contents($file, json_encode($history, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
+    // Uložit sestupně – nejnovější záznamy nahoře
+    $desc = array_reverse($history);
+    file_put_contents($file, json_encode($desc, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 }
 
 /**
@@ -254,11 +258,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $allHistory = loadHistory($chatFile);
         $sessionHistory = loadHistory($chatFile, $sessionId);
 
+        // Metadata o klientovi
+        $clientIp  = $_SERVER['HTTP_X_FORWARDED_FOR'] ?? $_SERVER['REMOTE_ADDR'] ?? 'unknown';
+        $userAgent = $_SERVER['HTTP_USER_AGENT'] ?? 'unknown';
+        $lang      = $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? 'unknown';
+        $referer   = $_SERVER['HTTP_REFERER'] ?? '';
+        $screen    = $input['screen'] ?? 'unknown';
+        $timezone  = $input['timezone'] ?? 'unknown';
+        $platform  = $input['platform'] ?? 'unknown';
+
         $userMsg = [
-            'role'    => 'user',
-            'content' => $userMessage,
-            'time'    => date('c'),
-            'session' => $sessionId,
+            'role'     => 'user',
+            'time'     => date('c'),
+            'session'  => $sessionId,
+            'model'    => $model,
+            'ip'       => $clientIp,
+            'ua'       => $userAgent,
+            'lang'     => strtok($lang, ','),
+            'platform' => $platform,
+            'screen'   => $screen,
+            'timezone' => $timezone,
+            'referer'  => $referer ?: null,
+            'content'  => $userMessage,
         ];
         $allHistory[] = $userMsg;
         $sessionHistory[] = $userMsg;
@@ -269,9 +290,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Přidej odpověď AI
         $aiMsg = [
             'role'    => 'assistant',
-            'content' => $aiResponse,
             'time'    => date('c'),
             'session' => $sessionId,
+            'model'   => $model,
+            'content' => $aiResponse,
         ];
         $allHistory[] = $aiMsg;
 
@@ -609,6 +631,9 @@ async function sendMessage() {
         const data = await apiCall('send', {
             message: text,
             model: modelSelect.value,
+            screen: screen.width + 'x' + screen.height,
+            timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+            platform: navigator.platform || navigator.userAgentData?.platform || 'unknown',
         });
 
         setTyping(false);
