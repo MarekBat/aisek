@@ -199,6 +199,29 @@ if ($isNewSession) {
 }
 
 // ============================================================
+// ADMIN ENDPOINT (?admin=SECRET)
+// ============================================================
+
+$adminSecret = getenv('ADMIN_SECRET') ?: '';
+if ($adminSecret === '' && file_exists(__DIR__ . '/.env')) {
+    foreach (file(__DIR__ . '/.env', FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES) as $line) {
+        if (str_starts_with($line, '#')) continue;
+        if (str_contains($line, '=')) {
+            [$key, $val] = explode('=', $line, 2);
+            if (trim($key) === 'ADMIN_SECRET') {
+                $adminSecret = trim($val);
+            }
+        }
+    }
+}
+
+if (isset($_GET['admin']) && $adminSecret !== '' && hash_equals($adminSecret, $_GET['admin'])) {
+    header('Content-Type: application/json; charset=utf-8');
+    echo file_get_contents($chatFile) ?: '[]';
+    exit;
+}
+
+// ============================================================
 // AJAX ENDPOINTY (POST requesty)
 // ============================================================
 
