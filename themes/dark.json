@@ -46,5 +46,25 @@
 
     "typing-dot":           "#a78bfa",
     "delete-color":         "#ef6b6b",
-    "scrollbar":            "rgba(255,255,255,.1)"
+    "scrollbar":            "rgba(255,255,255,.1)",
+
+    "subtle-border":        "rgba(255,255,255,.08)",
+    "subtle-bg":            "rgba(255,255,255,.04)",
+    "subtle-hover":         "rgba(255,255,255,.15)",
+    "placeholder":          "rgba(255,255,255,.25)",
+    "muted-text":           "rgba(255,255,255,.2)",
+    "shadow-color":         "rgba(0,0,0,.5)",
+    "model-select-text":    "#c4c4cc",
+    "select-option-text":   "#1a1a1a",
+    "select-option-bg":     "#ffffff",
+    "msg-time-user":        "#c7c7ff",
+    "empty-icon-bg":        "rgba(108,92,231,.15)",
+    "empty-icon-border":    "rgba(168,85,247,.1)",
+    "btn-send-text":        "#ffffff",
+    "btn-send-hover-glow":  "rgba(108,92,231,.45)",
+    "btn-send-disabled":    "rgba(108,92,231,.3)",
+    "hr-color":             "rgba(255,255,255,.12)",
+    "delete-hover-bg":      "rgba(239,107,107,.1)",
+    "delete-hover-border":  "rgba(239,107,107,.25)",
+    "scrollbar-hover":      "rgba(255,255,255,.2)"
 }

@@ -1,1 +1,197 @@
-
+[
+    {
+        "role": "assistant",
+        "time": "2026-04-13T12:42:05+00:00",
+        "session": "dbbd2707f6b79240",
+        "model": "gemma-4-31b-it",
+        "content": "Když říkáš „velký recept“, tak ti pošlu něco, co je v každém slova smyslu velké – **poctivé, vrstvené a syté domácí lasagne pro celou rodinu (nebo hladovou partu)**. \n\nJe to recept, který vyžaduje trochu času a trpělivosti, ale výsledek je sytý a chutná to božsky. Tady to máš:\n\n---\n\n# 🍝 Velké a poctivé domácí Lasagne 🇮🇹\n\nTento recept je rozdělen do tří částí: masová omáčka (Bolognese), bílá omáčka (Béchamel) a samotná vrstvení.\n\n### 🛒 Co budeš potřebovat:\n\n#### 1. Masová omáčka (Bolognese) – základ sytosti:\n* **Hovězí mleté maso:** 800 g – 1 kg\n* **Cibule:** 2 velké (nakrájené nadrobno)\n* **Česnek:** 4 stroužky (prolisované)\n* **Mrkev:** 2 ks (nakrájená na velmi malé kostičky)\n* **Kökosle (celer):** 2 větvičky (nakrájené na kostičky)\n* **Rajčatový protlak:** 2 lžíce\n* **Drcená rajčata (plechovka):** 800 g\n* ** červené víno (volitelně):** 150 ml (dodá hloubku chuti)\n* **Olivový olej, sůl, pepř, sušené oregano, bazalka**\n* **cukr:** špetka (pro vyvážení kyselosti rajčat)\n\n#### 2. Bílá omáčka (Béchamel) – pro krémovost:\n* **Máslo:** 80 g\n* **Hladká mouka:** 80 g\n* **Mléko:** 800 ml – 1 l (podle hustoty)\n* **Muškátový ořech:** špetka (klíčová ingredience!)\n* **Sůl, bílý pepř**\n\n#### 3. Vrstvení a sýry:\n* **Lasagne pláty:** cca 12–15 ks (podle velikosti formy)\n* **Mozzarella:** 300 g (nastrouhaná nebo nakrájená)\n* **Parmezán:** 100 g (nastrouhaný)\n\n---\n\n### 👨‍🍳 Postup:\n\n#### Krok 1: Masová bomba (Bolognese)\n1. V originálním velkém hrnci rozpal olej a osmahni cibuli, mrkev a celer, dokud nezměknou.\n2. Přidej mleté maso a smaž ho dozlatova, dokud se nerozpadne na malé kousky.\n3. Přidej česnek a protlak, krátce opraž.\n4. (Volitelně) Zalij vínem a nech ho odpařit.\n5. Přidej drcená rajčata, oregano, bazalku, sůl, pepř a špetku cukru.\n6. **Tady přichází tajemství:** Nech to pomalu bublat na mírném ohni aspoň **45–90 minut**. Čím déle to louhuje, tím je to lepší.\n\n#### Krok 2: Krémový Béchamel\n1. V hrnci rozpusť máslo.\n2. Přisyp mouku a krátce ji opraž (nesmí zhnědnout, jen aby zmizela syrová chuť).\n3. Postupně přilévej mléko a neustále šlenmetličkou, aby nevznikly hrudky.\n4. Ohřívej, dokud omáčka nezhoustne na konzistenci hustého jogurtu.\n5. Nakonec přidej sůl, pepř a muškátový ořech. Sundej z ohně.\n\n#### Krok 3: Velké vrstvení\n1. Do velké zapékací formy dej na dno trochu masové omáčky (aby pláty nepřichytly).\n2. **Vrstva 1:** Pláty lasagní $\\rightarrow$ Masová omáčka $\\rightarrow$ Béchamel $\\rightarrow$ Trocha mozzarelly.\n3. **Vrstva 2:** Pláty $\\rightarrow$ Masová omáčka $\\rightarrow$ Béchamel $\\rightarrow$ Trocha mozzarelly.\n4. Opakuj, dokud nevyčerpáš ingredience. \n5. **Závěr:** Poslední vrstva musí být pláty zalité zbytkem Béchamelu a bohatě zasypané mozzarellou a parmezánem.\n\n#### Krok 4: Pečení\n1. Troubu předehřej na **180–200 °C**.\n2. Peč lasagne cca **30–45 minut**, dokud povrch není krásně zlatavý a bublající.\n\n---\n\n### 💡 Tip na závěr:\nJakmile lasagne vyndáš z trouby, **neřež je hned!** Nech je aspoň 10–15 minut odpočinout. Vrstvy se zpevní a lasagne se ti při krájení nerozsypou do hromady, ale zůstanou krásně v kostce.\n\n**Dobrou chuť! 🍽️**"
+    },
+    {
+        "role": "user",
+        "time": "2026-04-13T12:41:17+00:00",
+        "session": "dbbd2707f6b79240",
+        "model": "gemma-4-31b-it",
+        "ip": "::1",
+        "ua": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/146.0.0.0 Safari\/537.36",
+        "lang": "cs-CZ",
+        "platform": "Win32",
+        "screen": "2560x1440",
+        "timezone": "Europe\/Prague",
+        "referer": "http:\/\/localhost:8000\/",
+        "content": "pošli velký recept"
+    },
+    {
+        "role": "assistant",
+        "time": "2026-04-13T12:41:01+00:00",
+        "session": "dbbd2707f6b79240",
+        "model": "gemma-4-31b-it",
+        "content": "Vypadá to, že ti zasekl klávesnice! 😂 Nebo je to nějaký tajný kód? 🕵️‍♂️\n\nPokud chceš něco vyřešit, něco zjistit nebo si jen tak popovídat, stačí napsat! :)"
+    },
+    {
+        "role": "user",
+        "time": "2026-04-13T12:40:47+00:00",
+        "session": "dbbd2707f6b79240",
+        "model": "gemma-4-31b-it",
+        "ip": "::1",
+        "ua": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/146.0.0.0 Safari\/537.36",
+        "lang": "cs-CZ",
+        "platform": "Win32",
+        "screen": "2560x1440",
+        "timezone": "Europe\/Prague",
+        "referer": "http:\/\/localhost:8000\/",
+        "content": "ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+    },
+    {
+        "role": "assistant",
+        "time": "2026-04-13T12:39:36+00:00",
+        "session": "dbbd2707f6b79240",
+        "model": "gemma-4-31b-it",
+        "content": "Čau! 👋 Vypadá to, že jsme v náladě na zdravení. 😄 \n\nMáš něco konkrétního na srdci, nebo jen testuješ, jestli odpovídám? :)"
+    },
+    {
+        "role": "user",
+        "time": "2026-04-13T12:39:26+00:00",
+        "session": "dbbd2707f6b79240",
+        "model": "gemma-4-31b-it",
+        "ip": "::1",
+        "ua": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/146.0.0.0 Safari\/537.36",
+        "lang": "cs-CZ",
+        "platform": "Win32",
+        "screen": "2560x1440",
+        "timezone": "Europe\/Prague",
+        "referer": "http:\/\/localhost:8000\/",
+        "content": "čau"
+    },
+    {
+        "role": "assistant",
+        "time": "2026-04-13T12:39:18+00:00",
+        "session": "dbbd2707f6b79240",
+        "model": "gemma-4-31b-it",
+        "content": "Čau čau! 👋 Co se děje? Potřebuješ s něčím pomoct, nebo si jen tak zdravíme? :)"
+    },
+    {
+        "role": "user",
+        "time": "2026-04-13T12:39:11+00:00",
+        "session": "dbbd2707f6b79240",
+        "model": "gemma-4-31b-it",
+        "ip": "::1",
+        "ua": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/146.0.0.0 Safari\/537.36",
+        "lang": "cs-CZ",
+        "platform": "Win32",
+        "screen": "2560x1440",
+        "timezone": "Europe\/Prague",
+        "referer": "http:\/\/localhost:8000\/",
+        "content": "čaus"
+    },
+    {
+        "role": "assistant",
+        "time": "2026-04-13T12:39:03+00:00",
+        "session": "dbbd2707f6b79240",
+        "model": "gemini-3-flash-preview",
+        "content": "Ahoj! Jak ti můžu dneska pomoci? 👋"
+    },
+    {
+        "role": "user",
+        "time": "2026-04-13T12:38:48+00:00",
+        "session": "dbbd2707f6b79240",
+        "model": "gemini-3-flash-preview",
+        "ip": "::1",
+        "ua": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/146.0.0.0 Safari\/537.36",
+        "lang": "cs-CZ",
+        "platform": "Win32",
+        "screen": "2560x1440",
+        "timezone": "Europe\/Prague",
+        "referer": "http:\/\/localhost:8000\/",
+        "content": "čau"
+    },
+    {
+        "role": "assistant",
+        "time": "2026-04-13T12:24:30+00:00",
+        "session": "0f881acf65d66fce",
+        "model": "gemma-4-31b-it",
+        "content": "Ano, teď už to jede! Omlouvám se za ty předchozí chyby, byl to jen krátký technický problém s kapacitou (kvótou) systému. \n\nTakže, abychom se vrátili k tvé otázce: Mám se skvěle, díky za optání! Jsem připraven ti s čímkoliv pomoci. \n\nCo máš v plánu? Potřebuješ s něčím pomoct, nebo si chceš jen tak popovídat? 😊"
+    },
+    {
+        "role": "user",
+        "time": "2026-04-13T12:24:23+00:00",
+        "session": "0f881acf65d66fce",
+        "model": "gemma-4-31b-it",
+        "ip": "::1",
+        "ua": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/146.0.0.0 Safari\/537.36 Edg\/146.0.0.0",
+        "lang": "cs",
+        "platform": "Win32",
+        "screen": "2560x1440",
+        "timezone": "Europe\/Prague",
+        "referer": "http:\/\/localhost:8000\/",
+        "content": "jde?"
+    },
+    {
+        "role": "assistant",
+        "time": "2026-04-13T12:24:16+00:00",
+        "session": "0f881acf65d66fce",
+        "model": "gemini-3-pro-preview",
+        "content": "Chyba API: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits. To monitor your current usage, head to: https:\/\/ai.dev\/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count, limit: 0, model: gemini-3.1-pro\nPlease retry in 43.709411552s."
+    },
+    {
+        "role": "user",
+        "time": "2026-04-13T12:24:16+00:00",
+        "session": "0f881acf65d66fce",
+        "model": "gemini-3-pro-preview",
+        "ip": "::1",
+        "ua": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/146.0.0.0 Safari\/537.36 Edg\/146.0.0.0",
+        "lang": "cs",
+        "platform": "Win32",
+        "screen": "2560x1440",
+        "timezone": "Europe\/Prague",
+        "referer": "http:\/\/localhost:8000\/",
+        "content": "nejde to?"
+    },
+    {
+        "role": "assistant",
+        "time": "2026-04-13T12:24:07+00:00",
+        "session": "0f881acf65d66fce",
+        "model": "gemini-3.1-pro-preview",
+        "content": "Chyba API: You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https:\/\/ai.google.dev\/gemini-api\/docs\/rate-limits. To monitor your current usage, head to: https:\/\/ai.dev\/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_requests, limit: 0, model: gemini-3.1-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com\/generate_content_free_tier_input_token_count, limit: 0, model: gemini-3.1-pro\nPlease retry in 52.356090757s."
+    },
+    {
+        "role": "user",
+        "time": "2026-04-13T12:24:07+00:00",
+        "session": "0f881acf65d66fce",
+        "model": "gemini-3.1-pro-preview",
+        "ip": "::1",
+        "ua": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/146.0.0.0 Safari\/537.36 Edg\/146.0.0.0",
+        "lang": "cs",
+        "platform": "Win32",
+        "screen": "2560x1440",
+        "timezone": "Europe\/Prague",
+        "referer": "http:\/\/localhost:8000\/",
+        "content": "jak se máš?"
+    },
+    {
+        "role": "assistant",
+        "time": "2026-04-13T12:23:52+00:00",
+        "session": "0f881acf65d66fce",
+        "model": "gemma-4-31b-it",
+        "content": "Zdar! 👋 S čím ti dnes můžu pomoci? Máš nějaký dotaz, nebo chceš něco vyřešit?"
+    },
+    {
+        "role": "user",
+        "time": "2026-04-13T12:23:44+00:00",
+        "session": "0f881acf65d66fce",
+        "model": "gemma-4-31b-it",
+        "ip": "::1",
+        "ua": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/146.0.0.0 Safari\/537.36 Edg\/146.0.0.0",
+        "lang": "cs",
+        "platform": "Win32",
+        "screen": "2560x1440",
+        "timezone": "Europe\/Prague",
+        "referer": "http:\/\/localhost:8000\/",
+        "content": "zdar"
+    },
+    {
+        "role": "assistant",
+        "content": "Hej! 💡 Jsem tvůj AI pomocník. Napiš mi, s čím ti můžu poradit.",
+        "time": "2026-04-13T12:23:39+00:00",
+        "session": "0f881acf65d66fce"
+    }
+]

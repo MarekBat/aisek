@@ -17,7 +17,7 @@
     "header-title":         "#0F284C",
 
     "accent-start":         "#54D174",
-    "accent-end":           "#58AD73",
+    "accent-end":           "#3CB85A",
     "accent-glow":          "rgba(84, 209, 116, .25)",
 
     "user-bubble-start":    "#0F284C",
@@ -37,14 +37,34 @@
     "input-focus-border":   "rgba(84, 209, 116, .6)",
     "input-focus-glow":     "rgba(84, 209, 116, .15)",
 
-    "link-color":           "#54D174",
-    "link-hover":           "#58AD73",
+    "link-color":           "#2B8A4B",
+    "link-hover":           "#1E6E3A",
     "code-bg":              "rgba(15, 40, 76, .06)",
     "pre-bg":               "rgba(15, 40, 76, .04)",
-    "blockquote-border":    "rgba(84, 209, 116, .5)",
+    "blockquote-border":    "rgba(43, 138, 75, .45)",
     "blockquote-color":     "#3F5470",
 
     "typing-dot":           "#54D174",
     "delete-color":         "#dc2626",
-    "scrollbar":            "rgba(15, 40, 76, .12)"
+    "scrollbar":            "rgba(15, 40, 76, .12)",
+
+    "subtle-border":        "rgba(15, 40, 76, .1)",
+    "subtle-bg":            "rgba(15, 40, 76, .02)",
+    "subtle-hover":         "rgba(15, 40, 76, .18)",
+    "placeholder":          "rgba(15, 40, 76, .35)",
+    "muted-text":           "rgba(15, 40, 76, .25)",
+    "shadow-color":         "rgba(15, 40, 76, .08)",
+    "model-select-text":    "#3F5470",
+    "select-option-text":   "#0F284C",
+    "select-option-bg":     "#ffffff",
+    "msg-time-user":        "rgba(255,255,255,.7)",
+    "empty-icon-bg":        "rgba(84, 209, 116, .1)",
+    "empty-icon-border":    "rgba(84, 209, 116, .12)",
+    "btn-send-text":        "#0F284C",
+    "btn-send-hover-glow":  "rgba(84, 209, 116, .4)",
+    "btn-send-disabled":    "rgba(84, 209, 116, .3)",
+    "hr-color":             "rgba(15, 40, 76, .08)",
+    "delete-hover-bg":      "rgba(220,38,38,.06)",
+    "delete-hover-border":  "rgba(220,38,38,.15)",
+    "scrollbar-hover":      "rgba(15, 40, 76, .2)"
 }
